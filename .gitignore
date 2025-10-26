@@ -1,0 +1,9 @@
+.DS_Store
+.xmake
+deps
+code/.xmake
+code/build
+/emsdk
+
+dist
+node_modules

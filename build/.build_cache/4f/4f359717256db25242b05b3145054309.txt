@@ -1,0 +1,11 @@
+{
+    errdata = "In file included from src/threepp/renderers/GLRenderer.cpp:45:\
+\27[1msrc/external/stb/stb_image_write.h:776:13: \27[0m\27[0;1;35mwarning: \27[0m\27[1m'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]\27[0m\
+  776 |       len = sprintf(buffer, \"EXPOSURE=          1.0000000000000\\n\\n-Y %d +X %d\\n\", y, x);\27[0m\
+      | \27[0;1;32m            ^\
+\27[0m\27[1m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h:274:16: \27[0m\27[0;1;30mnote: \27[0m'sprintf' has been explicitly marked deprecated here\27[0m\
+  274 | __attribute__((__deprecated__(\"This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.\")))\27[0m\
+      | \27[0;1;32m               ^\
+\27[0m1 warning generated.\
+"
+}
