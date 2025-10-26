@@ -1,5 +1,6 @@
 .DS_Store
 .xmake
+build
 deps
 code/.xmake
 code/build
