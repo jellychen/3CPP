@@ -1,3 +1,5 @@
+add_rules("plugin.compile_commands.autoupdate", {outputdir = ".xmake"})
+add_rules("mode.debug", "mode.release")
 
 -- assimp
 add_includedirs("./deps/assimp/include")
@@ -8,9 +10,9 @@ add_linkdirs("./deps/assimp/build/lib")
 add_includedirs("./deps/angle/include")
 add_linkdirs("./deps/angle/out/Release")
 
-target("3CPP")
+target("3r")
 
-    set_kind("binary")
+    set_kind("shared")
     set_languages("c99", "cxx20")
     add_rpathdirs(".")
     add_defines("USE_ANGLE")
@@ -53,7 +55,7 @@ target("3CPP")
     add_files("./src/threepp/utils/*.cpp")
 
 
-    add_files("./main.cc")
+    -- add_files("./main.cc")
 
     add_links("assimp")
     add_links("EGL")
