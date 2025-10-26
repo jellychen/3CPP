@@ -36,10 +36,24 @@ namespace threepp::gl {
                 return GL_RGB;
             case Format::RGBA:
                 return GL_RGBA;
-            // case Format::BGR:
-            //     return GL_BGR;
-            // case Format::BGRA:
-            //     return GL_BGRA;
+
+//
+// 不支持
+//
+#if defined(EMSCRIPTEN) || defined(USE_ANGLE)
+            case Format::BGR:
+            case Format::BGRA:
+            {
+                return 0;
+            }
+#else
+            case Format::BGR:
+                return GL_BGR;
+            case Format::BGRA:
+                return GL_BGRA;
+#endif
+
+
             case Format::Luminance:
                 return GL_LUMINANCE;
             case Format::LuminanceAlpha:
